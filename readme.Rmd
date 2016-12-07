@@ -1,0 +1,30 @@
+---
+title: "Italian regional divergence"
+author: "Francesco Bailo"
+date: "8 December 2016"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+
+```{r}
+setwd('~/public_git/regional_gdp_divergence_it')
+source('map.R')
+```
+
+
+```{r, fig.width = 11, fig.height = 5}
+grid.arrange(p[[1]],p[[2]],p[[3]],p[[4]],p[[5]],p[[6]],p[[7]],p[[8]],p[[9]], 
+             layout_matrix = rbind(c(1,2,3,4,5,6,7,8),c(9,9,9,9)))
+```
+
+# References
+
+* Geloso, V. (December, 2016). The uniqueness of Italian internal divergence. https://notesonliberty.com/2016/12/06/the-uniqueness-of-italian-internal-divergence/
+* Felice, E. (2011). Regional value added in Italy, 1891–2001, and the foundation of a long-term picture. The Economic History Review, 64(3), 929–950. https://doi.org/10.1111/j.1468-0289.2010.00568.x
+
