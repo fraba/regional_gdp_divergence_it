@@ -82,7 +82,7 @@ p_timeline <-
   scale_x_continuous(breaks = unique(regional_data_melt$variable)) +
   scale_colour_brewer(palette = 'Set2') +
   labs(x = NULL, y = NULL, colour = "", 
-       caption = 'Data: Felice, E. (2011). Regional value added in Italy. The Economic History Review, 64(3), 929–950\nDesign: @FrBailo') +
+       caption = 'Data: Felice, E. (2011). Regional value added in Italy. The Economic History Review, 64(3), 929–950\nDesign: @FrBailo\nGit: https://github.com/fraba/regional_gdp_divergence_it') +
   theme(legend.position = 'bottom')
 
 p[[9]] <- p_timeline
